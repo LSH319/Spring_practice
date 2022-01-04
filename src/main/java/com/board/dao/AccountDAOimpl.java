@@ -5,9 +5,11 @@ import java.util.List;
 import javax.inject.Inject;
 
 import org.apache.ibatis.session.SqlSession;
+import org.springframework.stereotype.Repository;
 
 import com.board.domain.AccountVO;
 
+@Repository
 public class AccountDAOimpl implements AccountDAO {
 
 	 @Inject
