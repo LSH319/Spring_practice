@@ -162,14 +162,12 @@ test 2
 							거래처명
 						</td>
 					</tr>
-					<tr>
 						<td>
 						
 						</td>
 						<td>
 						
 						</td>
-					</tr>
 					<tr>
 						<td>
 						

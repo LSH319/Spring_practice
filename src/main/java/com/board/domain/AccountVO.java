@@ -1,5 +1,6 @@
 package com.board.domain;
 
+
 public class AccountVO {
 /*
  CREATE TABLE ACCOUNT(
