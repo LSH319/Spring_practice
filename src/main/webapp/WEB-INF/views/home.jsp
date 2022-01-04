@@ -23,12 +23,11 @@ test 2
 	<title>Home</title>
 </head>
 <body>
-	<form>
-  		<input type="button" value="삭제" style="float:right; height:5%"/>
-  		<input type="button" value="수정" style="float:right; height:5%; margin-right:30"/>
-  		<input type="button" value="등록" style="float:right; height:5%; margin-right:30"/>
-  		<input type="button" value="초기화" style="float:right; height:5%; margin-right:30"/>
-	</form>
+  	<input type="button" value="삭제" style="float:right; height:5%"/>
+  	<input type="button" value="수정" style="float:right; height:5%; margin-right:30"/>
+  	<input type="submit" value="등록" style="float:right; height:5%; margin-right:30"/>
+  	<input type="button" value="초기화" style="float:right; height:5%; margin-right:30"/>
+	
 	<table border="2" style="height:90%; width:100%">
 	<style>
 		td{
@@ -67,88 +66,76 @@ test 2
 			</td>
 			<td rowspan="2"> 
 				<form>
-  					사업자 번호 <input type="text" name="busi_num">
-  					약칭 <input type="text" name="Short">
+  						사업자 번호 <input type="text" name="busi_num">
+  						약칭 <input type="text" name="Short">
+					<br>
+  						거래처명 <input type="text" name="custom" style="width:70%">
+					<br>
+  						대표자 <input type="text" name="ceo">
+  						담당자 <input type="text" name="charge_person">
+					<br>
+  						업태 <input type="text" name="busi_condition">
+  						종목 <input type="text" name="item">
+					<br>
+  						우편번호 <input type="text" name="post_num" readonly>
+  						<input type="button" value="검색" name="post_num_serchbutton">
+  						주소1 <input type="text" name="addr1" readonly>
+					<br>
+  						주소2 <input type="text" name="addr2" style="width:70%">
+					<br>
+  						전화번호 <input type="text" name="tel">
+  						팩스번호 <input type="text" name="fax">
+					<br>
+  						홈페이지 <input type="text" name="homepage" style="width:70%" >
+					<br>
+  						법인여부 
+  							<input type="radio" name="co_yn" value="법인" /> 법인
+							<input type="radio" name="co_yn" value="개인" /> 개인
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  						해외여부
+  							<input type="radio" name="foreign_yn" value="해외" /> 해외
+							<input type="radio" name="foreign_yn" value="국내" /> 국내
+					<br>
+  						과세구분 
+  						<select name = "tax">
+          					<option value = "tax_y" selected>과세</option>
+    					    <option value = "tax_n">면세</option>
+       					</select>
+  						국가 <input type="text" name="" readonly>
+  						<input type="text" name="" readonly>
+  						<input type="button" value="검색" name="conuntry_serch">
+					<br>
+  						특수관계자 <input type="checkbox" name="" style="width:15; height:15">
+  						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  						거래중지 <input type="checkbox" name="" style="width:15; height:15">
+					<br>
+  						계약기간 <input type="date" name="contract_period_s">
+  						<input type="date" name="contract_period_e">
+					<br>
+  						등록정보 <input type="text" name="regi_info_man">
+  						<input type="text" name="regi_info_date" readonly>
+					<br>
+						변경정보 <input type="text" name="modi_info_man">
+  						<input type="text" name="modi_info_date" readonly>
+					<br>
+					<p style="text-align:left">거래처 계좌번호</p>
+					<table border="1" style="width:100%">
+						<th>사무소</th>
+						<th>은행</th>
+						<th>계좌번호</th>
+						<tr>
+							<td>
+								<input type="text" name="factory">
+							</td>
+							<td>
+								<input type="text" name="trade_bank">
+							</td>
+							<td>
+								<input type="text" name="account_num">
+							</td>
+						</tr>
+					</table>
 				</form>
-				<form>
-  					거래처명 <input type="text" name="custom" style="width:70%">
-				</form>
-				<form>
-  					대표자 <input type="text" name="ceo">
-  					담당자 <input type="text" name="charge_person">
-				</form>
-				<form>
-  					업태 <input type="text" name="busi_condition">
-  					종목 <input type="text" name="item">
-				</form>
-				<form>
-  					우편번호 <input type="text" name="post_num" readonly>
-  					<input type="button" value="검색" name="post_num_serchbutton">
-  					주소1 <input type="text" name="addr1" readonly>
-				</form>
-				<form>
-  					주소2 <input type="text" name="addr2" style="width:70%">
-				</form>
-				<form>
-  					전화번호 <input type="text" name="tel">
-  					팩스번호 <input type="text" name="fax">
-				</form>
-				<form>
-  					홈페이지 <input type="text" name="homepage" style="width:70%" >
-				</form>
-				<form>
-  					법인여부 
-  						<input type="radio" name="co_yn" value="법인" /> 법인
-						<input type="radio" name="co_yn" value="개인" /> 개인
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  					해외여부
-  						<input type="radio" name="foreign_yn" value="해외" /> 해외
-						<input type="radio" name="foreign_yn" value="국내" /> 국내
-				</form>
-				<form>
-  					과세구분 
-  					<select name = "tax">
-          				<option value = "tax_y" selected>과세</option>
-    				    <option value = "tax_n">면세</option>
-       				</select>
-  					국가 <input type="text" name="" readonly>
-  					<input type="text" name="" readonly>
-  					<input type="button" value="검색" name="conuntry_serch">
-				</form>
-				<form>
-  					특수관계자 <input type="checkbox" name="" style="width:15; height:15">
-  					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  					거래중지 <input type="checkbox" name="" style="width:15; height:15">
-				</form>
-				<form>
-  					계약기간 <input type="date" name="contract_period_s">
-  					<input type="date" name="contract_period_e">
-				</form>
-				<form>
-  					등록정보 <input type="text" name="regi_info_man">
-  					<input type="text" name="regi_info_date" readonly>
-				</form>
-				<form>
-					변경정보 <input type="text" name="modi_info_man">
-  					<input type="text" name="modi_info_date" readonly>
-				</form>
-				<p style="text-align:left">거래처 계좌번호</p>
-				<table border="1" style="width:100%">
-				<th>사무소</th>
-				<th>은행</th>
-				<th>계좌번호</th>
-				<tr>
-					<td>
-						<input type="text" name="factory">
-					</td>
-					<td>
-						<input type="text" name="trade_bank">
-					</td>
-					<td>
-						<input type="text" name="account_num">
-					</td>
-				</tr>
-				</table>
 			</td>
 		</tr>
 		<tr>

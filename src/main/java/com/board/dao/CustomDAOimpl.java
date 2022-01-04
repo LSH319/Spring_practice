@@ -1,7 +1,5 @@
 package com.board.dao;
 
-import java.util.List;
-
 import javax.inject.Inject;
 
 import org.apache.ibatis.session.SqlSession;
@@ -15,11 +13,9 @@ public class CustomDAOimpl implements CustomDAO {
 	 
 	 private static String namespace = "com.board.mappers.custom";
 
-	 // 게시물 목록
 	 @Override
-	 public List<CustomVO> list() throws Exception { 
-	  
-		 return sql.selectList(namespace + ".custom");
+	 public void write(CustomVO vo) throws Exception { 
+		 sql.insert(namespace + ".write", vo);
 	 }
 
 }

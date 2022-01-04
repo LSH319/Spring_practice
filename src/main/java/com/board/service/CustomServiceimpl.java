@@ -1,20 +1,18 @@
 package com.board.service;
 
-import java.util.List;
-
 import javax.inject.Inject;
 
 import com.board.dao.CustomDAO;
 import com.board.domain.CustomVO;
 
-public class CostomServiceimpl implements CostomService {
+public class CustomServiceimpl implements CustomService {
 
 	@Inject
 	 private CustomDAO dao;
 	 
 	 @Override
-	 public List<CustomVO> list() throws Exception{
-		 return dao.list();
+	 public void write(CustomVO vo) throws Exception{
+		 dao.write(vo);
 	 }
 
 }

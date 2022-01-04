@@ -1,7 +1,7 @@
-package com.board.dao;
+package com.board.service;
 
 import com.board.domain.CustomVO;
 
-public interface CustomDAO {
+public interface CustomService {
 	public void write(CustomVO vo) throws Exception; 
 }
