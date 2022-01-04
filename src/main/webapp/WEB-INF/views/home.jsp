@@ -67,34 +67,34 @@ test 2
 			</td>
 			<td rowspan="2"> 
 				<form>
-  					사업자 번호 <input type="text" name="busi_num_show">
-  					약칭 <input type="text" name="short_show">
+  					사업자 번호 <input type="text" name="busi_num">
+  					약칭 <input type="text" name="Short">
 				</form>
 				<form>
-  					거래처명 <input type="text" name="custom_show" style="width:70%">
+  					거래처명 <input type="text" name="custom" style="width:70%">
 				</form>
 				<form>
-  					대표자 <input type="text" name="ceo_show">
-  					담당자 <input type="text" name="charge_person_show">
+  					대표자 <input type="text" name="ceo">
+  					담당자 <input type="text" name="charge_person">
 				</form>
 				<form>
-  					업태 <input type="text" name="busi_condition_show">
-  					종목 <input type="text" name="item_show">
+  					업태 <input type="text" name="busi_condition">
+  					종목 <input type="text" name="item">
 				</form>
 				<form>
-  					우편번호 <input type="text" name="post_num_show" readonly>
-  					<input type="button" value="검색" name="post_num_serch">
-  					주소1 <input type="text" name="addr1_show" readonly>
+  					우편번호 <input type="text" name="post_num" readonly>
+  					<input type="button" value="검색" name="post_num_serchbutton">
+  					주소1 <input type="text" name="addr1" readonly>
 				</form>
 				<form>
-  					주소2 <input type="text" name="addr2_show" style="width:70%">
+  					주소2 <input type="text" name="addr2" style="width:70%">
 				</form>
 				<form>
-  					전화번호 <input type="text" name="tel_show">
-  					팩스번호 <input type="text" name="fax_show">
+  					전화번호 <input type="text" name="tel">
+  					팩스번호 <input type="text" name="fax">
 				</form>
 				<form>
-  					홈페이지 <input type="text" name="homepage_show" style="width:70%" >
+  					홈페이지 <input type="text" name="homepage" style="width:70%" >
 				</form>
 				<form>
   					법인여부 
@@ -121,16 +121,16 @@ test 2
   					거래중지 <input type="checkbox" name="" style="width:15; height:15">
 				</form>
 				<form>
-  					계약기간 <input type="date" name="">
-  					<input type="date" name="">
+  					계약기간 <input type="date" name="contract_period_s">
+  					<input type="date" name="contract_period_e">
 				</form>
 				<form>
-  					등록정보 <input type="text" name="">
-  					<input type="text" name="" readonly>
+  					등록정보 <input type="text" name="regi_info_man">
+  					<input type="text" name="regi_info_date" readonly>
 				</form>
 				<form>
-					변경정보 <input type="text" name="">
-  					<input type="text" name="" readonly>
+					변경정보 <input type="text" name="modi_info_man">
+  					<input type="text" name="modi_info_date" readonly>
 				</form>
 				<p style="text-align:left">거래처 계좌번호</p>
 				<table border="1" style="width:100%">
@@ -139,13 +139,13 @@ test 2
 				<th>계좌번호</th>
 				<tr>
 					<td>
-						<input type="text" name="">
+						<input type="text" name="factory">
 					</td>
 					<td>
-						<input type="text" name="">
+						<input type="text" name="trade_bank">
 					</td>
 					<td>
-						<input type="text" name="">
+						<input type="text" name="account_num">
 					</td>
 				</tr>
 				</table>
