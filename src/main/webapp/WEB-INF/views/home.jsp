@@ -161,6 +161,7 @@ test 2
 						<td>
 							거래처명
 						</td>
+						<!-- 
 					</tr>
 						<td>
 						
@@ -169,6 +170,13 @@ test 2
 						
 						</td>
 					<tr>
+					-->
+					<c:forEach items="${list}" var="list">
+ <tr>
+  <td>${list.factory}</td>
+  <td>${list.busi_num}</td>
+ </tr>
+</c:forEach>
 						<td>
 						
 						</td>

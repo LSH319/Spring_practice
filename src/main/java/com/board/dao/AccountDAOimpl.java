@@ -21,7 +21,7 @@ public class AccountDAOimpl implements AccountDAO {
 	 @Override
 	 public List<AccountVO> list() throws Exception { 
 	  
-		 return sql.selectList(namespace + ".list");
+		 return sql.selectList(namespace + ".account");
 	 }
 
 }
