@@ -19,7 +19,7 @@ public class CustomDAOimpl implements CustomDAO {
 	 @Override
 	 public List<CustomVO> list() throws Exception { 
 	  
-		 return sql.selectList(namespace + ".list");
+		 return sql.selectList(namespace + ".custom");
 	 }
 
 }
